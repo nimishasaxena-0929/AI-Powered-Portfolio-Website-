@@ -180,7 +180,7 @@ Healthcheck endpoint monitor: `http://localhost:3000/api/health`
 - **Phone:** +91 9584841830
 - **LinkedIn:** https://www.linkedin.com/in/nimishasaxena29
 - **GitHub:** https://github.com/nimishasaxena-0929
-- **Location:** Gwalior, India — Remote
+- **Location:** India — Remote
 
 ---
 
