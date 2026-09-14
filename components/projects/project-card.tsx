@@ -41,6 +41,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         {/* Tab Controls */}
         <div className="flex items-center space-x-1 font-mono text-[11px]">
           <button
+            suppressHydrationWarning
             onClick={() => setActiveTab("overview")}
             className={`px-3 py-1 rounded transition-colors ${
               activeTab === "overview"
@@ -51,6 +52,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
             Overview
           </button>
           <button
+            suppressHydrationWarning
             onClick={() => setActiveTab("architecture")}
             className={`px-3 py-1 rounded transition-colors ${
               activeTab === "architecture"
@@ -61,6 +63,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
             Architecture
           </button>
           <button
+            suppressHydrationWarning
             onClick={() => setActiveTab("features")}
             className={`px-3 py-1 rounded transition-colors ${
               activeTab === "features"
@@ -148,6 +151,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         {/* Action Row */}
         <div className="pt-4 border-t border-[#222724] flex items-center justify-between gap-3 font-mono text-xs">
           <button
+            suppressHydrationWarning
             onClick={() => onSelect(project)}
             className="flex-1 py-2.5 px-4 rounded-lg bg-[#0B0D0C] border border-[#222724] text-slate-200 hover:text-white hover:border-lime-500 flex items-center justify-center space-x-2 transition-colors"
           >

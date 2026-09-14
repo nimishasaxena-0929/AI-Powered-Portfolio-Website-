@@ -89,6 +89,7 @@ export default function HeroSection() {
 
               {/* 1-Click Quick Email Copy Button */}
               <button
+                suppressHydrationWarning
                 onClick={handleCopyEmail}
                 className="px-5 py-3.5 rounded-lg font-mono text-xs text-slate-200 bg-[#121513] border border-[#222724] hover:border-lime-500/50 hover:text-white transition-all flex items-center space-x-2"
                 title="Copy email to clipboard"

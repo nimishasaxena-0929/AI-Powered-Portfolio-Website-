@@ -34,6 +34,7 @@ export default function Footer() {
 
           {/* Back to top */}
           <button
+            suppressHydrationWarning
             onClick={scrollToTop}
             className="px-3.5 py-2 rounded bg-[#121513] border border-[#222724] text-slate-300 hover:text-lime-500 font-mono text-xs flex items-center space-x-2 transition-colors"
           >
@@ -44,7 +45,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-slate-500">
-          <div>
+          <div suppressHydrationWarning>
             © {new Date().getFullYear()} Nimisha Saxena. All rights reserved. (Demo Profile)
           </div>
           <div className="flex items-center space-x-4">

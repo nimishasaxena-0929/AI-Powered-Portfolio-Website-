@@ -26,7 +26,7 @@ export default function AiLabSection() {
       role: "assistant",
       content:
         "Hello. I am Nimisha Saxena's AI Assistant powered by Google Gemini. Ask me about Nimisha's full-stack skills, SaaS architecture experience, education, or projects.",
-      timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+      timestamp: "Live",
     },
   ]);
 
@@ -146,6 +146,7 @@ export default function AiLabSection() {
             </div>
 
             <button
+              suppressHydrationWarning
               onClick={handleReset}
               className="px-3 py-1 rounded bg-[#0B0D0C] border border-[#222724] text-slate-400 hover:text-white flex items-center space-x-1.5 transition-colors"
             >
@@ -189,6 +190,7 @@ export default function AiLabSection() {
 
                     {msg.role === "assistant" && (
                       <button
+                        suppressHydrationWarning
                         onClick={() => copyToClipboard(msg.content, msg.id)}
                         className="opacity-0 group-hover:opacity-100 transition-opacity p-1 text-slate-500 hover:text-lime-500"
                         title="Copy to clipboard"
@@ -235,6 +237,7 @@ export default function AiLabSection() {
             </span>
             {SUGGESTED_PROMPTS.map((prompt) => (
               <button
+                suppressHydrationWarning
                 key={prompt}
                 onClick={() => handleSend(prompt)}
                 disabled={isLoading}
@@ -254,6 +257,7 @@ export default function AiLabSection() {
             className="p-4 bg-[#0B0D0C] border-t border-[#222724] flex items-center space-x-3"
           >
             <input
+              suppressHydrationWarning
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -263,6 +267,7 @@ export default function AiLabSection() {
             />
 
             <button
+              suppressHydrationWarning
               type="submit"
               disabled={isLoading || !input.trim()}
               className="px-5 py-3 rounded-lg bg-lime-500 text-charcoal-950 font-mono font-bold text-xs uppercase tracking-wider hover:bg-lime-400 disabled:opacity-50 transition-colors flex items-center space-x-2 shrink-0"

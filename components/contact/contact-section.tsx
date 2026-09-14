@@ -150,6 +150,7 @@ export default function ContactSection() {
                     Your Name <span className="text-lime-500">*</span>
                   </label>
                   <input
+                    suppressHydrationWarning
                     id="name"
                     type="text"
                     required
@@ -165,6 +166,7 @@ export default function ContactSection() {
                     Your Email <span className="text-lime-500">*</span>
                   </label>
                   <input
+                    suppressHydrationWarning
                     id="email"
                     type="email"
                     required
@@ -181,6 +183,7 @@ export default function ContactSection() {
                   Subject
                 </label>
                 <input
+                  suppressHydrationWarning
                   id="subject"
                   type="text"
                   value={formData.subject}
@@ -195,6 +198,7 @@ export default function ContactSection() {
                   Message <span className="text-lime-500">*</span>
                 </label>
                 <textarea
+                  suppressHydrationWarning
                   id="message"
                   required
                   rows={5}
@@ -221,6 +225,7 @@ export default function ContactSection() {
               )}
 
               <button
+                suppressHydrationWarning
                 type="submit"
                 disabled={status === "submitting"}
                 className="w-full py-3.5 rounded-lg bg-lime-500 text-charcoal-950 font-mono font-bold text-xs uppercase tracking-wider hover:bg-lime-400 transition-colors disabled:opacity-50 flex items-center justify-center space-x-2"

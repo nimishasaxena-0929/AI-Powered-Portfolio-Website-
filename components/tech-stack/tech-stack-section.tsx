@@ -104,6 +104,7 @@ export default function TechStackSection() {
           <div className="relative w-full md:w-72 font-mono text-xs">
             <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
+              suppressHydrationWarning
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -116,6 +117,7 @@ export default function TechStackSection() {
         {/* Category Pills */}
         <div className="flex flex-wrap items-center gap-2 mb-8 font-mono text-xs">
           <button
+            suppressHydrationWarning
             onClick={() => setSelectedCat("ALL")}
             className={`px-3.5 py-1.5 rounded-full border transition-all ${
               selectedCat === "ALL"
@@ -127,6 +129,7 @@ export default function TechStackSection() {
           </button>
           {SKILL_INDEX.map((cat) => (
             <button
+              suppressHydrationWarning
               key={cat.title}
               onClick={() => setSelectedCat(cat.title)}
               className={`px-3.5 py-1.5 rounded-full border transition-all ${

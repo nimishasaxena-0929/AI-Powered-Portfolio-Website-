@@ -110,6 +110,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-2">
             <button
+              suppressHydrationWarning
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg bg-[#121513] border border-[#222724] text-slate-300 hover:text-white focus:outline-none focus:ring-1 focus:ring-lime-500"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}

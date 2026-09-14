@@ -64,8 +64,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="relative bg-charcoal-950 text-slate-100 antialiased min-h-screen selection:bg-lime-500/20 selection:text-lime-400">
+    <html lang="en" className={`dark ${inter.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning className="relative bg-charcoal-950 text-slate-100 antialiased min-h-screen selection:bg-lime-500/20 selection:text-lime-400">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-lime-500 focus:text-charcoal-950 focus:font-semibold focus:rounded-md focus:shadow-lg focus:outline-none"

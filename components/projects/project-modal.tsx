@@ -50,6 +50,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Modal Header */}
           <div className="p-6 sm:p-8 bg-[#181C19] border-b border-[#222724] relative">
             <button
+              suppressHydrationWarning
               onClick={onClose}
               className="absolute top-6 right-6 p-2 rounded-lg bg-[#0B0D0C] border border-[#222724] text-slate-400 hover:text-white hover:border-lime-500 transition-colors"
               aria-label="Close project modal"
