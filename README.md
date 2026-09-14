@@ -118,14 +118,7 @@ cd AI-Powered-Portfolio-Website-
 npm install --legacy-peer-deps
 ```
 
-3. Configure environment variables:
-Create a `.env.local` file in the root directory:
-```env
-GEMINI_API_KEY=your_google_gemini_api_key_here
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
-
-4. Run the development server:
+3. Run the development server:
 ```bash
 npm run dev
 ```
@@ -165,11 +158,6 @@ Build the optimized multi-stage Docker container:
 docker build -t nimisha-portfolio .
 ```
 
-Run the container on port 3000:
-```bash
-docker run -p 3000:3000 -e GEMINI_API_KEY="your_api_key" nimisha-portfolio
-```
-
 Healthcheck endpoint monitor: `http://localhost:3000/api/health`
 
 ---
@@ -180,7 +168,7 @@ Healthcheck endpoint monitor: `http://localhost:3000/api/health`
 - **Phone:** +91 9584841830
 - **LinkedIn:** https://www.linkedin.com/in/nimishasaxena29
 - **GitHub:** https://github.com/nimishasaxena-0929
-- **Location:** Gwalior, India — Remote
+- **Location:** India — Remote
 
 ---
 
