@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0B0D0C;
+  --foreground: #F2F3EE;
+}
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    selection-background-color: rgba(200, 255, 61, 0.25);
+    selection-color: #C8FF3D;
+  }
+}
+
+/* Minimal Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0D0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242925;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8FF3D;
+}
+
+/* Editorial Utilities */
+.editorial-card {
+  background: #121513;
+  border: 1px solid #222724;
+  transition: all 0.25s ease-in-out;
+}
+
+.editorial-card:hover {
+  border-color: rgba(200, 255, 61, 0.35);
+}
+
+.editorial-border {
+  border-color: #222724;
+}
+
+.text-accent-lime {
+  color: #C8FF3D;
+}
+
+.bg-accent-lime {
+  background-color: #C8FF3D;
+}
+
+/* Reduced motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
